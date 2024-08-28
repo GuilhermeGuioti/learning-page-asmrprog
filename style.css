@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #18181A;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 10%;
+    margin-block: 40px;
+}
+
+.logo img{
+    width: 120px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    padding: 28px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: all 0.3 ease;
+}
+
+.nav ul li:hover{
+    border-bottom: #1751D7 solid 1px;
+    cursor: pointer;
+}
+
+.btn{
+    align-items: center;
+    display: flex
+}
+
+.btn button{
+    padding-inline: 44px;
+    padding-block: 20px;
+    color: #fff;
+    border: none;
+    background-color: #1751D7;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3 ease;
+}
+
+.btn button:hover{
+    opacity: 0.7;
+}
+
+
+/*HERO*/
+
+.hero{
+    display: flex;
+    margin-inline: 10%;
+    margin-block: 8rem;
+}
+
+.hero__left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__left h2{
+    color: #ccc;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.hero__left h1{
+    color: #fff;
+    font-size: 3.3rem;
+    margin-block: 1.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+    max-width: 600px;
+}
+
+.hero__left h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.hero__left p{
+    color: #ccc;
+    font-size: 1.2rem;
+    max-width: 660px;
+}
+
+.hero__left button{
+    margin-top: 1.5rem;
+    padding-block: 20px;
+    border: none;
+    background-color: #1751D7;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3 ease;
+    max-width: 23%;
+}
+
+.hero__left button:hover{
+    opacity: 0.7;
+}
+
+.hero__right{
+    width: 50%;
+}
+
+.hero__right img{
+    max-width: 700px;
+}
+
+
+/*FEATURES*/
+
+.features h2{
+    color: #fff;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.features{
+    margin-inline: 10%;
+    margin-top: 10rem;
+}
+
+.features__box{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.features__card{
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.features__card:hover{
+    border: 2px solid #fff;
+}
+
+.features__card span{
+    background-color: #1751D7;
+    padding: 2px 9px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.features__card span i{
+    color: #fff;
+    font-size: 1.75rem;
+}
+
+.features__card h3{
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.features__card p{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-block: 1rem;
+}
+
+.features__card a{
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/*FLAT*/
+
+.flat{
+    margin-inline: 10%;
+    margin-top: 10rem;
+}
+
+.flat h2{
+    color: #fff;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+}
+
+.flat__subtitle{
+    color: #ccc;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.flat__box{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.flat .flat__box .features__card{
+    flex: 1;
+}
+
+.flat__card{
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.flat__card:hover{
+    border: 2px solid #fff;
+}
+
+.flat__card h3{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.flat__card h4{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.flat__card span{
+    color: #fff;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 5rem;
+    font-size: 1.3rem
+}
+
+.flat__card p{
+    padding-left: 1rem;
+    padding-block: 0.3rem;
+    color: #ccc;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+}
+
+.flat__card p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.flat .flat__card button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: 100%;
+    padding-block: 16px;
+    border-radius: 8px;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.flat .flat__card button:hover{
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
+
+
+/*INFO*/
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 10%;
+    margin-block: 10rem;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.column p{
+    color: #ccc;
+    font-size: 1.2rem;
+    max-width: 500px;
+    padding-block: 2rem;
+}
+
+.column .socials a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 2rem;
+    border: 2px solid #ccc;
+    text-align: center;
+    border-radius: 100%;
+    margin: auto;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.socials a:hover{
+    color: #fff;
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.column h4{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.column a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding-block: 0.5rem;
+}
+
+.footer p{
+    color: #fff;
+    text-align: center;
+}
+
+
+/*RESPONSIVE*/
+
+@media (widht < 1100){
+    .hero__right img{
+        max-width: 500px;
+    }
+}
